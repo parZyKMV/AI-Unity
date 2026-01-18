@@ -509,8 +509,8 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0.31687, y: 2.29, z: 6.51}
-  m_LocalScale: {x: 4, y: 4, z: 4}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 4952930865455944427}
   m_Father: {fileID: 0}
@@ -528,8 +528,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::AutonomousAgent
   movement: {fileID: 5568448171080860924}
-  seekPerception: {fileID: 5002134683102626475}
-  fleePerception: {fileID: 0}
+  seekPerception: {fileID: 0}
+  fleePerception: {fileID: 4579808354826152722, guid: 0154dbba95e8e3a47a52ca81e9bf5b24, type: 3}
+  wanderRadius: 1
+  wanderDistance: 1
+  wanderDisplacement: 10
 --- !u!114 &5568448171080860924
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -653,3 +656,6 @@ MonoBehaviour:
   movement: {fileID: 0}
   seekPerception: {fileID: 0}
   fleePerception: {fileID: 0}
+  wanderRadius: 1
+  wanderDistance: 1
+  wanderDisplacement: 10

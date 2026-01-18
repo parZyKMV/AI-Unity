@@ -23,6 +23,9 @@ public class AgentSpawner : MonoBehaviour
             if (Physics.Raycast(ray, out RaycastHit hitInfo, 100.0f, layerMask))
             {
                 Instantiate(agents[agentIndex], hitInfo.point, Quaternion.Euler(0, Random.Range(0, 360), 0));
+
+                agentIndex = (agentIndex + 1) % agents.Length;
+
             }
         }
     }
